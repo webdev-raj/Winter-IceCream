@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Winter Ice Cream clone</title>
 </head>
+
 <body>
-    <div class="h-screen bg-zinc-900 w-full"></div>
+    <div id="main" class="bg-[#FEFBEC] text-[#352C0D] min-h-screen">
+        <header class="w-full flex items-center justify-between py-6 px-20">
+            <div id="logo" class="flex items-center gap-1">
+                <i class="fa-solid fa-ice-cream text-4xl"></i>
+                <h1 class="font-[font2] uppercase font-semibold text-2xl">scoopit</h1>
+            </div>
+            <nav class="flex items-center gap-10">
+                <h1 class="text-[1rem] font-[font2] font-light cursor-pointer capitalize">shop</h1>
+                <h1 class="text-[1rem] font-[font2] font-light cursor-pointer capitalize">about us</h1>
+                <h1 class="text-[1rem] font-[font2] font-light cursor-pointer capitalize">flavours</h1>
+                <h1 class="text-[1rem] font-[font2] font-light cursor-pointer capitalize">our story</h1>
+                <h1 class="text-[1rem] font-[font2] font-light cursor-pointer capitalize">contact</h1>
+            </nav>
+            <div class="flex items-center gap-2">
+                <div id="profile" class="cursor-pointer h-9 w-9 rounded-full flex items-center justify-center bg-[#FAC609]"><i class="fa-solid text-lg fa-user"></i></div>
+                <div id="bag" class="cursor-pointer h-9 w-9 rounded-full flex items-center justify-center bg-[#FAC609]"><i class="fa-solid text-lg fa-bag-shopping"></i></div>
+            </div>
+        </header>
+        <main>
+            <section class="h-screen w-full flex items-start justify-center px-20">
+                <div class="relative h-[44vh] w-full bg-[#ECE9D6] rounded-[50px] flex items-center justify-center mt-10">
+                    <div class="absolute top-0 left-0 flex items-start justify-between w-full">
+                        <img class="relative z-10 w-48" src="./images/strawberryScoop.png" alt="strawberry_scoop">
+                        <img class="w-48" src="./images/strawberry.png" alt="strawberry">
+                    </div>
+                    <h1 class="relative text-[14rem] font-bold font-[font1] tracking-wider leading-none">milky scoops</h1>
+                </div>
+                <div id="mainIceCream">
+                    <img src="" alt="">
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
+
 </html>
