@@ -29,7 +29,7 @@
             </div>
         </header>
         <main>
-            <section class="h-screen w-full flex items-start justify-center px-20">
+            <section class="min-h-screen w-full flex items-center justify-start flex-col px-20">
                 <div class="relative h-[44vh] w-full bg-[#ECE9D6] rounded-[50px] flex items-center justify-center mt-10">
                     <div class="absolute top-0 left-0 flex items-start justify-between w-full">
                         <img class="relative z-10 w-48" src="./images/strawberryScoop.png" alt="strawberry_scoop">
@@ -37,12 +37,69 @@
                     </div>
                     <h1 class="relative text-[14rem] font-bold font-[font1] tracking-wider leading-none">milky scoops</h1>
                 </div>
-                <div id="mainIceCream">
-                    <img src="" alt="">
+                <div id="mainIceCream" class="flex items-center justify-center flex-col w-full">
+                    <img class="absolute top-60 rotate-[25deg] w-fit h-[94vh]" src="./images/doubleDelight.png" alt="">
+                    <div class="h-96 w-3/4 mt-40 overflow-hidden">
+                        <img class="h-full w-full object-cover object-left-bottom" src="./images/almonds.png" alt="">
+                    </div>
                 </div>
             </section>
+            <section class="px-20 h-screen w-full py-14 flex items-start justify-between flex-col">
+                <h1 class="font-[font1] text-7xl">browse your product</h1>
+               <div class="h-4/5 w-full flex items-end justify-between gap-20">
+                    <div class="w-1/2 h-full flex items-center justify-end flex-col relative">
+                        <img class="z-10 w-[20rem] absolute bottom-14" src="./images/pistachioIcecream.png" alt="">
+                        <div class="px-6 py-5 h-60 w-full bg-[#ECE9D6] rounded-3xl absolute bottom-0 flex items-end justify-between">
+                            <div>
+                                <h1 class="leading-5 font-[font2]">pistachio IceCream</h1>
+                                <h1 class="leading-5 font-semibold font-[font2]">$14.00</h1>
+                            </div>
+                            <div id="bag" class="cursor-pointer h-9 w-9 rounded-full flex items-center justify-center bg-[#FAC609]"><i class="fa-solid text-lg fa-bag-shopping"></i></div>
+                        </div>
+                    </div>
+                    <div class="w-1/2 h-full flex items-center justify-end flex-col relative">
+                        <div class="px-6 py-5 h-60 w-full bg-[#ECE9D6] rounded-3xl absolute bottom-0 flex items-end justify-between">
+                            <div>
+                                <h1 class="leading-5 font-[font2]">doubleDelight IceCream</h1>
+                                <h1 class="leading-5 font-semibold font-[font2]">$14.00</h1>
+                            </div>
+                            <div id="bag" class="cursor-pointer h-9 w-9 rounded-full flex items-center justify-center bg-[#FAC609]"><i class="fa-solid text-lg fa-bag-shopping"></i></div>
+                        </div>
+                    </div>
+                    <div class="w-1/2 h-full flex items-center justify-end flex-col relative">
+                        <img class="z-10 w-[20rem] absolute bottom-14" src="./images/strawberryIcecream.png" alt="">
+                        <div class="px-6 py-5 h-60 w-full bg-[#ECE9D6] rounded-3xl absolute bottom-0 flex items-end justify-between">
+                            <div>
+                                <h1 class="leading-5 font-[font2]">strawberry IceCream</h1>
+                                <h1 class="leading-5 font-semibold font-[font2]">$14.00</h1>
+                            </div>
+                            <div id="bag" class="cursor-pointer h-9 w-9 rounded-full flex items-center justify-center bg-[#FAC609]"><i class="fa-solid text-lg fa-bag-shopping"></i></div>
+                        </div>
+                    </div>
+               </div>
+            </section>
+            <section class="h-[70vh] w-full px-20">
+                <div class="w-full h-[60vh] bg-[#352C0D] flex items-center justify-center rounded-[50px] relative">
+                    <div class="w-1/2 h-full relative">
+                        <img class="h-full w-full object-cover" src="./images/icecreamCombo.png" alt="">
+                    </div>
+                    <div class="text-[#FEFBEC] text-center w-1/4 h-full flex items-center justify-center flex-col">
+                        <h1 class="font-[font1] text-8xl leading-[4.9rem]">
+                            milky scoops
+                        </h1>
+                        <p class="capitalize font-[font2] leading-none">our unique production is 100% healthy</p>
+                        <button class="px-6 py-3 text-xl text-black capitalize rounded-full bg-[#FAC609] font-[font2] mt-5">learn more</button>
+                    </div>
+                    <div class="w-1/2 h-full relative">
+                        <img class="h-full w-full object-contain absolute -bottom-28" src="./images/caramelScoops.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="h-[70vh] w-full px-20"></section>
         </main>
     </div>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script> 
+    <script src="script.js"></script>
 </body>
 
 </html>
