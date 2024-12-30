@@ -10,3 +10,6 @@
     font-family: font2;
     src: url("./Poppins-Regular.ttf");
 }
+::-webkit-scrollbar{
+    display: none;
+}
