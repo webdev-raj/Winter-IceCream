@@ -14,7 +14,7 @@ var tl = gsap.timeline({
   scrollTrigger:{
     trigger:"#mainIceCream",
     scroller:"body",
-    markers:true,
+    markers:false,
     start:"20% 10%",
     end:"90% 10%",
     scrub:2,
@@ -32,7 +32,7 @@ var tl2 = gsap.timeline({
   scrollTrigger:{
     trigger:"#page2",
     scroller:"body",
-    markers:true,
+    markers:false,
     start:"20% 10%",
     end:"90% 10%",
     scrub:2,
@@ -49,7 +49,7 @@ var tl3 = gsap.timeline({
   scrollTrigger:{
     trigger:"#page3",
     scroller:"body",
-    markers:true,
+    markers:false,
     start:"20% 10%",
     end:"90% 10%",
     scrub:2,
