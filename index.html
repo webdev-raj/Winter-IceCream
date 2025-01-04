@@ -12,12 +12,12 @@
 
 <body>
     <div id="main" class="bg-[#FEFBEC] text-[#352C0D] min-h-screen">
-        <header class="w-full flex items-center justify-between py-6 px-20">
+        <header class="w-full flex items-center justify-between py-6 px-20 max-sm:px-2">
             <div id="logo" class="flex items-center gap-1">
                 <i class="fa-solid fa-ice-cream text-4xl"></i>
                 <h1 class="font-[font2] uppercase font-semibold text-2xl">scoopit</h1>
             </div>
-            <nav class="flex items-center gap-10">
+            <nav class="flex items-center gap-10 max-sm:hidden">
                 <h1 class="text-[1rem] font-[font2] font-light cursor-pointer capitalize">shop</h1>
                 <h1 class="text-[1rem] font-[font2] font-light cursor-pointer capitalize">about us</h1>
                 <h1 class="text-[1rem] font-[font2] font-light cursor-pointer capitalize">flavours</h1>
@@ -30,22 +30,22 @@
             </div>
         </header>
         <main>
-            <section class="min-h-screen w-full flex items-center justify-start flex-col px-20">
+            <section class="min-h-screen w-full flex items-center justify-start flex-col px-20 max-sm:px-2">
                 <div class="relative h-[44vh] w-full bg-[#ECE9D6] rounded-[50px] flex items-center justify-center mt-10">
                     <div class="absolute top-0 left-0 flex items-start justify-between w-full">
                         <img class="relative z-10 w-48" src="./images/strawberryScoop.png" alt="strawberry_scoop">
                         <img class="w-48" src="./images/strawberry.png" alt="strawberry">
                     </div>
-                    <h1 class="relative text-[14rem] font-bold font-[font1] tracking-wider leading-none">milky scoops</h1>
+                    <h1 class="relative text-[14rem] font-bold font-[font1] tracking-wider leading-none max-sm:text-9xl">milky scoops</h1>
                 </div>
                 <div class="flex items-center justify-center flex-col w-full">
-                    <img id="mainIceCream" class="z-10 absolute top-60 rotate-[25deg]     h-[94vh]" src="./images/doubleDelight.png" alt="">
+                    <img id="mainIceCream" class="z-10 absolute top-60 rotate-[25deg] h-[94vh] max-sm:h-80" src="./images/doubleDelight.png" alt="">
                 </div>
-                <div class="h-96 w-3/4 mt-40 overflow-hidden">
+                <div class="h-96 w-3/4 mt-40 overflow-hidden max-sm:mt-0 max-sm:h-32">
                     <img class="h-full w-full object-cover object-left-bottom" src="./images/almonds.png" alt="">
                 </div>
             </section>
-            <section id="page2" class="px-20 h-screen w-full py-14 flex items-start justify-between flex-col">
+            <section id="page2" class="px-20 h-screen w-full py-14 flex items-start justify-between flex-col max-sm:px-2">
                 <h1 class="font-[font1] text-7xl">browse your product</h1>
                <div class="h-4/5 w-full flex items-end justify-between gap-20">
                     <div class="w-1/2 h-full flex items-center justify-end flex-col relative">
@@ -79,7 +79,7 @@
                     </div>
                </div>
             </section>
-            <section id="page3" class="h-[70vh] w-full px-20">
+            <section id="page3" class="h-[70vh] w-full px-20 max-sm:px-2">
                 <div class="w-full h-[60vh] bg-[#352C0D] flex items-center justify-center rounded-[50px] relative">
                     <div class="z-20 w-1/2 h-full relative">
                         <img class="h-full w-full object-cover" src="./images/icecreamCombo.png" alt="">
@@ -96,7 +96,7 @@
                     </div>
                 </div>
             </section>
-            <section class="h-[50vh] w-full bg-[#ECE9D6] px-20">
+            <section class="h-[50vh] w-full bg-[#ECE9D6] px-20 max-sm:px-2">
                 <div class="h-full w-full flex items-end justify-center">
                     <div class="w-1/2 h-full">
                         <img class="z-40 relative h-full w-full object-cover object-center" src="./images/milk.png" alt="">
@@ -111,7 +111,7 @@
                     </div>
                 </div>
             </section>
-            <section class="h-screen w-full px-20 bg-[url('images\leaves.png')] bg-no-repeat flex items-center justify-center">
+            <section class="h-screen w-full px-20 bg-[url('images\leaves.png')] bg-no-repeat flex items-center justify-center max-sm:px-2">
                 <div class="flex items-center justify-center flex-col gap-3">
                     <div class="h-72">
                         <img class="h-full" src="./images/icecreamFlavours.png" alt="">
@@ -126,10 +126,10 @@
             <p>Copyright 2023 Milky Scoops. All rights reserved.</p>
         </footer>
     </div>
-    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script> 
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>
